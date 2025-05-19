@@ -1,0 +1,154 @@
+---
+title: 🧠 Real-Time Face Recognition System
+description: A computer vision project that detects and recognizes human faces in real-time using Python, OpenCV, and KNN — all in under 100 lines of code per module.
+---
+
+A computer vision project that brings facial recognition to life using Python, OpenCV, and K-Nearest Neighbors (KNN). The app captures video from your webcam, detects human faces in real-time, collects training data, and identifies faces on the fly — all in under 100 lines of code per module.
+
+---
+
+## 📁 Project Structure
+
+| File | Purpose |
+|------|---------|
+| `video_read.py` | Captures and displays webcam video frames |
+| `face_detection.py` | Detects faces using Haar Cascade Classifier |
+| `face_data.py` | Captures and stores face data for training |
+| `face_recognition.py` | Real-time face recognition using KNN |
+| `haarcascade_frontalface_alt.xml` | Pre-trained Haar Cascade model for face detection |
+| `requirements.txt` | Python dependencies |
+| `README.md` | Project documentation |
+
+```
+face-recognition/
+├── face_dataset/
+│   ├── face1.npy
+│   ├── face2.npy
+├── haarcascade_frontalface_alt.xml
+├── video_read.py
+├── face_detection.py
+├── face_data.py
+├── face_recognition.py
+├── requirements.txt
+├── README.md
+```
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/real-time-face-recognition.git
+cd real-time-face-recognition
+```
+
+### 2. Install Dependencies
+
+```bash
+pip install numpy opencv-python
+```
+
+### 3. Download the Haar Cascade XML
+
+Download `haarcascade_frontalface_alt.xml` from the OpenCV GitHub repo and place it in the project directory.
+
+---
+
+## 🧪 How It Works
+
+### 📸 Face Detection with Haar Cascades
+
+This uses **Haar-like features** and a **Cascade Classifier** for efficient real-time face detection. OpenCV’s pretrained classifiers can spot frontal human faces by comparing light/dark regions using integral images.
+
+- ✔️ **Pros**: Lightweight, fast, easy to use  
+- ⚠️ **Cons**: Sensitive to lighting and tilt
+
+---
+
+### 🧬 Face Recognition with K-Nearest Neighbors (KNN)
+
+Each captured face image is flattened into a NumPy array. When a new face is detected, its array is compared against the dataset using Euclidean distance. The `k` nearest vectors vote on the label.
+
+**Steps:**
+
+1. Face is detected and cropped  
+2. Image is resized and flattened to 1D  
+3. Distance to known vectors is computed  
+4. Most common label among `k` closest neighbors is returned
+
+- ✅ No model training required  
+- 📈 Scales well for small/medium datasets
+
+---
+
+## 🧰 Example Commands
+
+### Run Webcam Video Feed
+
+```bash
+python video_read.py
+```
+
+### Face Detection Only
+
+```bash
+python face_detection.py
+```
+
+### Collect Training Data
+
+```bash
+python face_data.py
+```
+
+### Start Face Recognition
+
+```bash
+python face_recognition.py
+```
+
+---
+
+## 🌍 Real-World Applications
+
+- 🔐 **Security Systems**: Unlock doors via facial recognition  
+- 🛂 **Authentication**: Replace login systems with your face  
+- 🛍 **Retail**: Personalize shopping experiences  
+- 🏥 **Healthcare**: Verify patients automatically
+
+---
+
+## ⚡ Key Advantages
+
+- 🧠 **Modular Design** – Each script has a single clear responsibility  
+- 🚀 **Fast Execution** – Works on regular laptops  
+- 🔄 **Easily Extendable** – You can plug in a deep learning model later  
+- 🎯 **Accurate Enough** – Given good lighting and data
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License — see the [LICENSE](https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt) file for details.
+
+---
+
+## 🤝 Contributing
+
+Open to collaborations, improvements, or just conversation.
+
+- ⭐ Star the repo  
+- 🍴 Fork it  
+- 🛠️ Submit a pull request
+
+---
+
+## 📬 Contact
+
+Email: [satvik.shankar2003@gmail.com](mailto:satvik.shankar2003@gmail.com)
+
+---
+
+> *"The face is the index of the mind. Turns out, it's also a pretty good password."*
