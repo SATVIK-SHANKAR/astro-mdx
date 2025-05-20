@@ -2,10 +2,16 @@
 title: Welcome !!
 description: Get started building your docs site with Starlight.
 template: splash
-hero:
+# hero:
   
-  actions:
-    - text: Get Started
-      link: /about/about/	
-      icon: right-arrow
+#   actions:
+#     - text: Get Started
+#       link: /about/about/	
+#       icon: right-arrow    
 ---
+import { LinkButton } from '@astrojs/starlight/components';
+
+<LinkButton href="/about/about">Get started</LinkButton>
+<LinkButton href="https://drive.google.com/file/d/1uLhiX8uHTzRVn4StyT6P-fgbjbqP5plX/view" variant="secondary">
+  Download CV
+</LinkButton>

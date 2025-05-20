@@ -1,5 +1,5 @@
 ---
-title: 🧠 Real-Time Face Recognition System
+title: Real-Time Face Recognition System
 description: A computer vision project that detects and recognizes human faces in real-time using Python, OpenCV, and KNN — all in under 100 lines of code per module.
 ---
 
@@ -7,7 +7,7 @@ A computer vision project that brings facial recognition to life using Python, O
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 | File | Purpose |
 |------|---------|
@@ -35,7 +35,7 @@ face-recognition/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### 1. Clone the Repository
 
@@ -56,18 +56,18 @@ Download `haarcascade_frontalface_alt.xml` from the OpenCV GitHub repo and place
 
 ---
 
-## 🧪 How It Works
+## How It Works
 
-### 📸 Face Detection with Haar Cascades
+### Face Detection with Haar Cascades
 
 This uses **Haar-like features** and a **Cascade Classifier** for efficient real-time face detection. OpenCV’s pretrained classifiers can spot frontal human faces by comparing light/dark regions using integral images.
 
-- ✔️ **Pros**: Lightweight, fast, easy to use  
-- ⚠️ **Cons**: Sensitive to lighting and tilt
+- **Pros**: Lightweight, fast, easy to use  
+- **Cons**: Sensitive to lighting and tilt
 
 ---
 
-### 🧬 Face Recognition with K-Nearest Neighbors (KNN)
+### Face Recognition with K-Nearest Neighbors (KNN)
 
 Each captured face image is flattened into a NumPy array. When a new face is detected, its array is compared against the dataset using Euclidean distance. The `k` nearest vectors vote on the label.
 
@@ -78,12 +78,12 @@ Each captured face image is flattened into a NumPy array. When a new face is det
 3. Distance to known vectors is computed  
 4. Most common label among `k` closest neighbors is returned
 
-- ✅ No model training required  
-- 📈 Scales well for small/medium datasets
+- No model training required  
+- Scales well for small/medium datasets
 
 ---
 
-## 🧰 Example Commands
+## Example Commands
 
 ### Run Webcam Video Feed
 
@@ -111,41 +111,41 @@ python face_recognition.py
 
 ---
 
-## 🌍 Real-World Applications
+## Real-World Applications
 
-- 🔐 **Security Systems**: Unlock doors via facial recognition  
-- 🛂 **Authentication**: Replace login systems with your face  
-- 🛍 **Retail**: Personalize shopping experiences  
-- 🏥 **Healthcare**: Verify patients automatically
-
----
-
-## ⚡ Key Advantages
-
-- 🧠 **Modular Design** – Each script has a single clear responsibility  
-- 🚀 **Fast Execution** – Works on regular laptops  
-- 🔄 **Easily Extendable** – You can plug in a deep learning model later  
-- 🎯 **Accurate Enough** – Given good lighting and data
+- **Security Systems**: Unlock doors via facial recognition  
+- **Authentication**: Replace login systems with your face  
+- **Retail**: Personalize shopping experiences  
+- **Healthcare**: Verify patients automatically
 
 ---
 
-## 📜 License
+## Key Advantages
+
+- **Modular Design** – Each script has a single clear responsibility  
+- **Fast Execution** – Works on regular laptops  
+- **Easily Extendable** – You can plug in a deep learning model later  
+- **Accurate Enough** – Given good lighting and data
+
+---
+
+## License
 
 This project is licensed under the MIT License — see the [LICENSE](https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt) file for details.
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Open to collaborations, improvements, or just conversation.
 
-- ⭐ Star the repo  
-- 🍴 Fork it  
-- 🛠️ Submit a pull request
+- Star the repo  
+- Fork it  
+- Submit a pull request
 
 ---
 
-## 📬 Contact
+## Contact
 
 Email: [satvik.shankar2003@gmail.com](mailto:satvik.shankar2003@gmail.com)
 
