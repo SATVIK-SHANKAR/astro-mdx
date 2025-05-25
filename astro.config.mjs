@@ -30,6 +30,10 @@ export default defineConfig({
   					autogenerate: { directory: 'blogs' }, // This auto-generates sidebar from folder
 				},
 				{
+  					label: 'Learning',
+  					autogenerate: { directory: 'learn' }, // This auto-generates sidebar from folder
+				},
+				{
     				label: 'Contact',
     				items: [
       					{ label: 'Contact Me', slug: 'contact/contact' },
